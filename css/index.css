@@ -1,0 +1,339 @@
+/*Base da página*/
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Helvetica;
+    box-sizing: border-box;
+}
+
+h1, h2, h3 {
+    color: #44444e;
+}
+
+p {
+    color: #181820a9;
+}
+
+/* Navbar */
+.navbar-container {
+    width: 100%;
+    height: 80px;
+    background-color: #181820;
+    padding: 0 2rem;
+    position: fixed;
+    z-index: 1000;
+}
+
+nav {
+    position: relative;
+}
+.logo {
+    width: 85px;
+    margin-top: 0;
+}
+
+.navbar-items {
+    position: absolute;
+    right: 0;
+    height: 80px;
+    line-height: 80px;
+    margin: 0;
+    display: inline-block;
+}
+
+.navbar-items li {
+    display: inline-block;
+    text-transform: uppercase;
+    margin-left: 25px;
+}
+
+.icone-lingua
+{
+    width: 20px;
+    height: 15px;
+}
+
+.navbar-items a {
+    color: #fff;
+    text-decoration: none;
+    transition: 0.5s;
+}
+
+.navbar-items a:hover {
+    color: #d1111c;
+}
+
+.texto-lingua {
+    margin-left: 0.3em;
+}
+
+/* Main Banner */
+.main-banner {
+    background-image: url("../img/banner-formula.jpg");
+    background-size: cover;
+    background-position: center;
+    padding: 10rem 0;
+}
+
+.main-banner h1,
+.main-banner p {
+    color: #eeececb6;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-shadow: #d88d8d 1px 1px 1px;
+}
+
+.main-banner h1 {
+    font-size: 45px;
+}
+
+.main-banner p {
+    font-size: 15px;
+}
+
+/* Tópicos principais da equipe */
+.meet-formula {
+    padding: 5rem 0;
+}
+
+.meet-formula ul {
+    display: flex;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.formula-imgs-pre-info {
+    width: 350px;
+    padding: 15px;
+}
+
+.meet-formula li {
+    flex: 1 1 200px;
+    list-style: none;
+    text-align: center;
+    padding: 20px;
+}
+
+.meet-formula p {
+    margin-bottom: 25px;
+}
+.meet-formula .default-btn {
+    padding: 15px 20px;
+    background-color: #ad3f44;
+    border-radius: 5px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+.meet-formula .default-btn:hover {
+    transition: 0.5s;
+    background-color: #fff;
+    color: #ad3f44;
+    border: 1px solid #949090;
+}
+
+.meet-formula li h3 {
+    border-bottom: 1px solid #d1111c;
+}
+
+/* Banner Pista Corrida */
+.fundo-pista {
+    height: 250px;
+}
+.banner-pista {
+    background-image: url(../img/pista-fundo.png);
+    background-repeat: repeat-x;
+    background-size: contain;
+    background-position: center;
+}
+
+
+/* Titulos */
+
+.br-titles-container {
+    padding-bottom: 5rem;
+    text-align: center;
+}
+
+.br-titles-container h2{
+    font-size: 36px;
+    margin-top: 15px;   
+}
+
+.br-titles-container p {
+    font-size: 20px;
+}
+
+.brasilian-titles-container {
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    margin: 50px auto 0;
+}
+
+.br-title {
+    flex: 1;
+    max-width: 275px;
+    margin: 0 20px;
+}
+
+.br-title ul {
+    padding: 0;
+}
+
+.br-title li {
+    list-style: none;
+    height: 50px;
+    line-height: 50px;
+    background-color: #adb7c2;
+    color: #333;
+}
+
+.br-title .year {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    background-color: #dd444cc2;
+    color: #fff;
+    text-align: center;
+    line-height: 120px;
+    margin: 0 auto -50px;
+    font-size: 18px;
+    position: relative;
+    background-image: url(../img/trofeu.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.br-title .competition-edition{
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: bold;
+    color: #fff;
+    background-color: #202b34;
+    padding: 50px 0;
+}
+
+.br-title .plan-btn {
+    background-color: #d1111c;
+    color: #fff;
+    font-size: 24px;
+    height: 75px;
+    line-height: 75px;
+    cursor: pointer;
+}
+
+.lower {
+    text-transform: lowercase;
+}
+
+.icon-medal {
+    width: 20px;
+}
+
+.br-title .plan-btn:hover {
+    transition: .5s;
+    background-color: #181820;
+}
+
+/* Barra Cadastro */
+
+.searchdomain-container {
+    background-color: #2f3638;
+    text-align: center;
+    padding: 5rem 0;
+}
+
+.searchdomain-container h2{
+    color: #fff;
+    font-size: 42px;
+    margin-bottom: 15px;
+}
+
+.searchdomain-container p{
+    color: #d5d5d5;
+    font-size: 24px;
+    margin-bottom: 25px;
+}
+
+.searchdomain-container input{
+    display: block;
+    border: none;
+    border-radius: 5px;
+    margin: 0 auto;
+}
+
+.searchdomain-container input[type="text"]{
+    width: 60%;
+    padding: 20px;
+    font-size: 20px;
+    margin-bottom: 25px;
+}
+
+.searchdomain-container input[type="submit"]{
+    background-color: #e2252e;
+    padding: 15px 30px;
+    color: #fff;
+    font-size: 24px;
+    cursor: pointer;
+    opacity: .8;
+}
+
+.searchdomain-container input[type="submit"]:hover{
+    opacity: 1;
+}
+
+/* Formulario */
+.contact-container {
+    text-align: center;
+    padding: 5rem 0 2rem 0;
+}
+
+.contact-container h2 {
+    font-size: 36px;
+}
+
+.contact-container p {
+    font-size: 20px;
+    margin-bottom: 40px;
+}
+
+.contact-container input, 
+.contact-container textarea {
+    width: 200px;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin: 0 10px 20px;
+}
+
+.contact-container textarea {
+    display: block;
+    margin: 0 auto 20px;
+    width: 470px;
+    height: 150px;
+}
+
+.contact-container input[type="submit"]{
+    display: block;
+    margin: 0 auto;
+    background-color: #e2252e;
+    color: #fff;
+    cursor: pointer;
+    opacity: .8;
+}
+
+.contact-container input[type="submit"]:hover {
+    opacity: 1;
+}
+/* footer */
+footer {
+    text-align: center;
+    font-weight: bold;
+    margin: 20px 0 100px;
+}
