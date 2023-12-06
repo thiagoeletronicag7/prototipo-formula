@@ -82,7 +82,7 @@ nav {
     text-align: center;
     text-transform: uppercase;
     font-weight: bold;
-    text-shadow: #d88d8d 1px 1px 1px;
+    text-shadow: #6f7ed1 1px 1px 1px;
 }
 
 .main-banner h1 {
@@ -142,6 +142,8 @@ nav {
 /* Banner Pista Corrida */
 .fundo-pista {
     height: 250px;
+    display: flex;
+    align-items: center;
 }
 .banner-pista {
     background-image: url(../img/pista-fundo.png);
@@ -149,6 +151,18 @@ nav {
     background-size: contain;
     background-position: center;
 }
+
+.carrinho {
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    background-image: url(../img/carrinho-correndo.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    border-radius: 5px;
+    transform: translateX(0);
+    transition: transform 2s linear;
+  }
 
 
 /* Titulos */
